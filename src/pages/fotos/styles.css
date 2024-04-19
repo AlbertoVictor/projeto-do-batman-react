@@ -1,0 +1,104 @@
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    
+}
+
+h1{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+#cards {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0 20px;
+}
+
+.cardi {
+    width: 100vw;
+    height: 470px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    display: flex;
+    flex: 1;
+}
+.cardi:hover {
+    flex: 5;
+}
+
+.banner-01 {
+    background-image: url(https://r1.ilikewallpaper.net/iphone-12-pro-max-wallpapers/download-144551/the-batman-2022-movie-4k.jpg);
+}
+
+.banner-02 {
+    background-image: url(https://m.media-amazon.com/images/M/MV5BN2MwNTI4ODQtN2YyYi00NWUxLWI1OGYtMjhhZDllN2VkNWMxXkEyXkFqcGdeQXVyODUxNjcxNjE@._V1_.jpg);
+}
+.banner-03 {
+    background-image: url(https://wallpapercave.com/wp/wp9429736.jpg);
+}
+.banner-04 {
+    background-image: url(https://www.ixpap.com/images/2022/03/Batman-2022-Wallpaper-15-500x889.jpg);
+}
+.banner-05 {
+    background-image: url(https://4kwallpapers.com/images/wallpapers/the-batman-2022-movies-dc-comics-red-background-2560x1440-6775.jpg);
+}
+.banner-06 {
+    background-image: url(https://wallpapercave.com/wp/wp9429752.jpg);
+}
+.banner-07 {
+    background-image: url(https://images.hdqwalls.com/download/the-batman-2022-5k-q8-1920x1080.jpg);
+}
+.banner-08 {
+    background-image: url(https://images6.fanpop.com/image/photos/44100000/The-Batman-2022-Movie-Poster-the-batman-movie-44192643-2048-1038.jpg);
+}
+
+@media (max-width: 768px){
+    #cards{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .cardi{
+        width: 75%;
+        height: 550px;
+        transition: .8s;
+        margin-top: 8px;
+        flex: none;
+    }
+    .cardi:hover {
+        transform: scale(1.03);
+        flex: none;
+    }
+}
+
+@media(max-width:480px){
+    #cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardi{
+        width: 70%;
+        height: 400px;
+        transition: .8s;
+        flex: none;
+    }
+    .cardi:hover {
+        flex: none;
+        transform: scale(1.02);
+    }
+}

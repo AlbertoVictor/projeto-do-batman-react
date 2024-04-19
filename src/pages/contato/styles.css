@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://imagensfree.com.br/wp-content/uploads/2021/10/batman-2022-wallpaper-oficial-1536x734.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+}
+
+h1{
+    color: #fff;
+}
+
+.trailer-content{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.input-content{
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+    padding: 10px;
+    height: 450px;
+    width: 50%;
+}
+
+label {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #d21617;
+}
+
+button {
+    width: 40%;
+    height: 50px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+input {
+    background-color: rgb(23, 23, 23);
+    border-color: #fff transparent transparent #fff;
+    color: #fff;
+}
+
+textarea{
+    background-color: rgb(23, 23, 23);
+    border-color: #fff transparent transparent #fff;
+    color: #fff;
+}
+
+@media(max-width:768px){
+    .input-content{
+        width: 65%;
+    }
+
+    button{
+        width: 55%;
+        font-size: 16px;
+        height: 40px;
+    }
+}
+
+@media(max-width:480px){
+    .input-content{
+        width: 70%;
+    }
+    button{
+        width: 60%;
+        height: 40px;
+        font-size: 14px;
+    }
+}

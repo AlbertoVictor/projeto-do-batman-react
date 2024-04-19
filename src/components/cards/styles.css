@@ -1,0 +1,76 @@
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #000;
+}
+
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: auto;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url(https://noticiasdatv.uol.com.br/media/uploads/artigos_2021/batman-robert-pattinson-foto-divulgacao-warner-bros.jpg);
+}
+.banner-2 {
+    background-image: url(https://i.pinimg.com/originals/0a/a6/61/0aa66140c3d0bde86a8de619f1bf11da.png);
+}
+.banner-3 {
+    background-image: url(https://www.omega-level.net/wp-content/uploads/2019/10/the-batman-jeffrey-wright-commissioner-gordon.jpg);
+}
+
+@media (max-width: 768px){
+    .cards-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        align-items: center;
+        
+    }
+    
+    .card{
+        width: 70%;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .actor-cards-container{
+        width: 100%;
+    }
+
+    .cards-content {
+        width: 80%;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
+    .card {
+        height: 450px;
+    }
+}
+
